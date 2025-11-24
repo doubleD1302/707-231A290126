@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 03 - Countdown Timer</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+    <div class="timer-container">
+        <h2>Thời gian làm bài còn lại</h2>
+        <div id="countdown" class="timer-display">10:00</div>
+        <p>Hệ thống sẽ tự động nộp bài khi hết giờ.</p>
+    </div>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-box">
+            <h3>Hết giờ!</h3>
+            <p>Thời gian làm bài của bạn đã kết thúc.</p>
+            <button onclick="closeModal()">Đóng</button>
+        </div>
+    </div>
+
+    <script src="js/script3.js"></script>
+</body>
+</html>

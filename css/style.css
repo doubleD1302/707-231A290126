@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style cho ô tìm kiếm */
+.search-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Grid Layout cho danh sách sản phẩm (Responsive) */
+.product-grid {
+    display: grid;
+    /* Tự động lấp đầy dòng, mỗi cột tối thiểu 220px, tối đa 1 phần */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 20px;
+}
+
+/* Style cho từng thẻ sản phẩm */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Hiệu ứng bay lên nhẹ khi di chuột */
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.product-card .price {
+    color: #d9534f; /* Màu đỏ cho giá */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.product-card .category {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Style cho thông báo lỗi */
+.error-message {
+    text-align: center;
+    color: #dc3545;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
